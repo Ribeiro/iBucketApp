@@ -1,0 +1,24 @@
+<ion-view title="iBucketList">
+	<ion-nav-buttons side="secondary">
+	      <button class="button" ng-click="showAddWish()">
+	        Add Wish
+	      </button>
+	</ion-nav-buttons>
+     <ion-content>
+     <div class="userHomeMsg">
+        <span>
+            <h2>Succesfully Logged in - Listing Wishes</h2>
+        </span>
+      </div>
+      	<ul class="list">
+		    <li class="item" ng-repeat="wish in wishes">
+		        {{wish.wish}}
+		    </li>
+		</ul>
+    </ion-content>
+    <!-- Logout Button -->
+     <button ng-click="logout()" class="button button-block button-assertive">
+                Logout
+     </button>
+
+</ion-view>
